@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'echo "hi" $DB_ENGINE'
                 sh 'echo $DB_ENGINE'
                 sh print.sh
             }
