@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh 'echo "hi" $DB_ENGINE'
                 sh 'echo $DB_ENGINE'
-                sh './test-1/print.sh'
+                sh 'test/test-1/print.sh'
             }
         }
     }
